@@ -12,7 +12,7 @@ This static page contains the proposed workshop title, a short description, the 
 - `docs/styles.css`: responsive styling
 - `docs/assets/robot-arm-illustrated.webp`: active cartoon robot illustration
 - `docs/assets/matrix-surface-storybook.svg`: pastel cartoon treatment of the analytic SPD(2) surface
-- `docs/assets/field-notes.svg`, `geometry-friends.svg`, and `letter.svg`: small original vector illustrations used across the page
+- `docs/assets/field-notes.svg`, `team-birds.svg`, and `letter.svg`: small original vector illustrations used across the page
 - `docs/assets/`: illustration assets, favicon, and self-hosted fonts with licenses
 - `tools/generate-matrix-surface.py`: reproducible source for the geometric illustration
 - `artwork/`: original robot illustration and its generation prompt/provenance
@@ -25,7 +25,7 @@ Regenerate the active matrix surface with `python3 tools/generate-matrix-surface
 
 Navigation uses native page anchors. A skip link, visible keyboard focus, reduced-motion support, and responsive layouts are included. The site makes no third-party font or script requests.
 
-The robot composition is reduced by approximately 20% on larger screens, with a separate compact tablet layout. Small notebook, geometric-companion, and envelope illustrations extend the warm storybook direction to the section headings and footer. These decorative SVGs are original code-native assets and are hidden from screen readers. No new factual claims or program commitments are introduced by the visual refinements.
+The page has a centered maximum content width of 890px, approximately 70% of its earlier 1272px layout. Heading sizes, column gaps, and the robot composition are adjusted to suit the narrower page; small screens retain comfortable reading margins. Small notebook, bird-trio, and envelope illustrations extend the warm storybook direction to the section headings and footer. These decorative SVGs are original code-native assets and are hidden from screen readers. No new factual claims or program commitments are introduced by the visual refinements.
 
 Font sources:
 
