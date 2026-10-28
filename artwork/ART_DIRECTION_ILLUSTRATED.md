@@ -7,7 +7,7 @@ Created with the built-in imagegen tool in two edit passes on October 29, 2026. 
 Final source: `artwork/robot-arm-illustrated.png`.
 Website asset: `docs/assets/robot-arm-illustrated.webp`, encoded at quality 90 with the original alpha preserved.
 
-The active matrix surface uses the original analytic SPD(2) parameterization with fewer mesh lines, a pastel fill, and a small decorative face. Regenerate it with `python3 tools/generate-matrix-surface.py --storybook`; use `--illustrated` for the earlier sparse line drawing. The mathematical grid and highlighted geodesic remain analytically generated. Its juxtaposition with the robot is illustrative, not a specific kinematic mapping.
+The active matrix surface uses the original analytic SPD(2) parameterization with fewer mesh lines, a pastel fill, and soft outlines. Regenerate it with `python3 tools/generate-matrix-surface.py --storybook`; use `--illustrated` for the earlier sparse line drawing. The mathematical grid and highlighted geodesic remain analytically generated. Its juxtaposition with the robot is illustrative, not a specific kinematic mapping.
 
 ## First edit prompt
 

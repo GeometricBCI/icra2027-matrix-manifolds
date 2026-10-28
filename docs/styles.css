@@ -99,7 +99,6 @@ h1 em { color: var(--accent); font-weight: 350; }
 .surface-art { position: absolute; z-index: 1; left: -1%; top: 41%; display: block; width: 59%; height: auto; }
 .geometry-label { position: absolute; left: 9%; top: 90%; color: var(--muted); font-family: var(--hand); font-size: 12px; }
 .geometry-label > span { margin-left: 17px; font-family: var(--serif); font-size: 13px; letter-spacing: 0; }
-.research-visual figcaption { margin: 0 7% 0 0; padding-top: 7px; color: var(--muted); font-family: var(--hand); font-size: 16px; line-height: 1.5; text-align: right; }
 .section-layout { display: grid; grid-template-columns: minmax(210px, 1fr) minmax(0, 2.1fr); column-gap: 60px; border-top: 1px solid var(--rule); }
 .section-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .section-illustration { display: block; width: 114px; height: auto; margin: 2px 0 0 -9px; }
@@ -179,7 +178,6 @@ h2 { margin: 0; color: var(--ink); font-family: var(--hand); font-size: 28px; fo
   .research-visual { width: 86%; margin: 18px 0 0 auto; }
   .geometry-label { font-size: 10px; }
   .geometry-label > span { margin-left: 12px; font-size: 11px; }
-  .research-visual figcaption { font-size: 14px; padding-top: 7px; margin-right: 3%; }
   .section-layout { grid-template-columns: 1fr; gap: 24px; }
   .section-heading { flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; }
   .section-illustration { width: 64px; margin: -10px 0 -7px; }

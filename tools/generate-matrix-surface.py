@@ -14,7 +14,7 @@ import argparse
 parser = argparse.ArgumentParser(description=__doc__)
 style = parser.add_mutually_exclusive_group()
 style.add_argument('--illustrated', action='store_true', help='Use a sparse, stronger line drawing to accompany the cartoon robot.')
-style.add_argument('--storybook', action='store_true', help='Add pastel coloring and a decorative cartoon face to the analytic surface.')
+style.add_argument('--storybook', action='store_true', help='Add pastel coloring and soft outlines to the analytic surface.')
 options = parser.parse_args()
 storybook = options.storybook
 illustrated = options.illustrated or storybook
@@ -49,7 +49,7 @@ line_color = '#59766a' if illustrated else '#747c6d'
 line_width = '2.0' if storybook else '1.5' if illustrated else '0.78'
 parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" fill="none">',
          '<title>Unit-determinant SPD(2) surface</title>',
-         '<desc>A projected hyperboloid representing positive-definite two-by-two matrices of determinant one. A geodesic for the affine-invariant metric is drawn in red. Any coloring or facial features are decorative.</desc>']
+         '<desc>A projected hyperboloid representing positive-definite two-by-two matrices of determinant one. A geodesic for the affine-invariant metric is drawn in red. The pastel coloring is decorative.</desc>']
 
 if storybook:
     # Color the projected silhouette without perturbing the analytic grid.
@@ -94,17 +94,6 @@ parts.append(f'<path d="{path(curve)}" stroke="#a54e36" stroke-width="{3.3 if st
 for point in [curve[0], curve[-1]]:
     x,y = mapped(point)
     parts.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="#a54e36"/>')
-if storybook:
-    parts.extend([
-        '<g transform="translate(252 259) rotate(-26)">',
-        '<ellipse rx="48" ry="30" fill="#e6ecd9"/>',
-        '<ellipse cx="-14" cy="-4" rx="3.5" ry="5" fill="#4d5d50"/>',
-        '<ellipse cx="14" cy="-4" rx="3.5" ry="5" fill="#4d5d50"/>',
-        '<path d="M-7 10Q0 18 7 10" stroke="#4d5d50" stroke-width="2.4" stroke-linecap="round"/>',
-        '<ellipse cx="-28" cy="7" rx="7" ry="3.4" fill="#d9a58c" opacity=".65"/>',
-        '<ellipse cx="28" cy="7" rx="7" ry="3.4" fill="#d9a58c" opacity=".65"/>',
-        '</g>'
-    ])
 parts.append('</svg>')
 
 filename = 'matrix-surface-storybook.svg' if storybook else 'matrix-surface-illustrated.svg' if illustrated else 'matrix-surface.svg'
