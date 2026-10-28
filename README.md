@@ -10,13 +10,17 @@ This static page contains the proposed workshop title, a short description, the 
 
 - `docs/index.html`: website content
 - `docs/styles.css`: responsive styling
-- `docs/assets/`: robot artwork, geometric illustration, favicon, and self-hosted fonts with licenses
+- `docs/assets/robot-arm-illustrated.webp`: active cartoon robot illustration
+- `docs/assets/matrix-surface-illustrated.svg`: sparse analytic geometric illustration
+- `docs/assets/`: illustration assets, favicon, and self-hosted fonts with licenses
 - `tools/generate-matrix-surface.py`: reproducible source for the geometric illustration
 - `artwork/`: original robot illustration and its generation prompt/provenance
 
 No build step, JavaScript, third-party requests, or runtime dependencies are required. Open `docs/index.html` locally or serve the `docs` directory with a static web server. Keep the full `docs` directory together.
 
-The design uses Source Serif 4 and IBM Plex Sans, warm ivory, graphite, and a restrained rust accent. Font files are served by the website, with their original SIL Open Font License files in `docs/assets/fonts`. The hero combines a conceptual robot-arm rendering with an orthographic projection of the determinant-one surface in SPD(2); the highlighted curve is an affine-invariant geodesic. The artwork is illustrative and does not represent a particular team's equipment or a specific kinematic mapping. The original robot asset and exact generation prompt are retained in `artwork/`.
+The design uses Source Serif 4 and IBM Plex Sans, warm ivory, muted sage, charcoal, and small terracotta accents. Font files are served by the website, with their original SIL Open Font License files in `docs/assets/fonts`. The hero combines a hand-drawn-style cartoon robot arm with an orthographic projection of the determinant-one surface in SPD(2); the highlighted curve is an affine-invariant geodesic. The artwork is illustrative and does not represent a particular team's equipment or a specific kinematic mapping. The source illustration and complete generation prompts are retained in `artwork/`, with the active direction documented in `ART_DIRECTION_ILLUSTRATED.md`. The earlier studio-rendering artwork is retained for reference.
+
+Regenerate the active matrix surface with `python3 tools/generate-matrix-surface.py --illustrated`; running the script without that option regenerates the original engraving.
 
 Navigation uses native page anchors. A skip link, visible keyboard focus, reduced-motion support, and responsive layouts are included. The site makes no third-party font or script requests.
 

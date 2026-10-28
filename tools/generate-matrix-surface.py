@@ -9,6 +9,11 @@ Only the displayed projection is rotated and scaled; no data are implied.
 """
 from math import sin, cos, sinh, cosh, pi, exp
 from pathlib import Path
+import argparse
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--illustrated', action='store_true', help='Use a sparse, stronger line drawing to accompany the cartoon robot.')
+illustrated = parser.parse_args().illustrated
 
 R = 1.9
 ELEVATION = 34 * pi / 180
@@ -34,33 +39,37 @@ def mapped(p):
 def path(points):
     return 'M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in map(mapped, points))
 
+ring_count = 8 if illustrated else 22
+meridian_count = 16 if illustrated else 36
+line_color = '#59766a' if illustrated else '#747c6d'
+line_width = '1.5' if illustrated else '0.78'
 parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" fill="none">',
          '<title>Unit-determinant SPD(2) surface</title>',
          '<desc>A projected hyperboloid representing positive-definite two-by-two matrices of determinant one. A geodesic for the affine-invariant metric is drawn in red.</desc>',
-         '<g stroke="#747c6d" stroke-width="0.78" stroke-linejoin="round" stroke-linecap="round">']
+         f'<g stroke="{line_color}" stroke-width="{line_width}" stroke-linejoin="round" stroke-linecap="round">']
 
-for i in range(1, 22):
-    r = R*i/22
+for i in range(1, ring_count):
+    r = R*i/ring_count
     points = [project(r, 2*pi*j/240) for j in range(241)]
-    parts.append(f'<path d="{path(points)}" opacity="{.38+.18*i/22:.3f}"/>')
+    parts.append(f'<path d="{path(points)}" opacity="{.48+.18*i/ring_count if illustrated else .38+.18*i/ring_count:.3f}"/>')
 
-for i in range(36):
-    theta = 2*pi*i/36
+for i in range(meridian_count):
+    theta = 2*pi*i/meridian_count
     points = [project(R*j/130, theta) for j in range(131)]
-    opacity = .31 + .23*(1+sin(theta))/2
+    opacity = (.45 if illustrated else .31) + .23*(1+sin(theta))/2
     parts.append(f'<path d="{path(points)}" opacity="{opacity:.3f}"/>')
 
 parts.append('</g>')
-parts.append(f'<path d="{path(rim)}" stroke="#535e4e" stroke-width="1.1" opacity=".75"/>')
+parts.append(f'<path d="{path(rim)}" stroke="#535e4e" stroke-width="{1.8 if illustrated else 1.1}" opacity=".75"/>')
 
 theta = .60
 curve = [project(-R + 2*R*i/220, theta) for i in range(221)]
-parts.append(f'<path d="{path(curve)}" stroke="#a54e36" stroke-width="1.8" stroke-linecap="round"/>')
+parts.append(f'<path d="{path(curve)}" stroke="#a54e36" stroke-width="{2.6 if illustrated else 1.8}" stroke-linecap="round"/>')
 for point in [curve[0], curve[-1]]:
     x,y = mapped(point)
     parts.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="#a54e36"/>')
 parts.append('</svg>')
 
-target = Path(__file__).resolve().parents[1]/'docs/assets/matrix-surface.svg'
+target = Path(__file__).resolve().parents[1]/'docs/assets'/('matrix-surface-illustrated.svg' if illustrated else 'matrix-surface.svg')
 target.write_text('\n'.join(parts)+'\n')
 print(f'Generated {target.name}: {target.stat().st_size:,} bytes')
