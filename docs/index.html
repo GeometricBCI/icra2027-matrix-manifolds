@@ -3,26 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#173746">
+    <meta name="theme-color" content="#f5f2eb">
     <meta name="description" content="Matrix Manifold Methods in Engineering: Robotics and Brain-Computer Interfaces. A proposed ICRA 2027 workshop. Website under construction.">
     <title>Matrix Manifold Methods in Engineering | Proposed ICRA 2027 Workshop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/SourceSerif4-Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css?v=2">
   </head>
   <body>
     <main class="page">
       <header class="masthead">
-        <p class="eyebrow">Proposed ICRA 2027 workshop</p>
+        <p class="masthead-title"><span>ICRA 2027</span><span class="masthead-note">Workshop proposal</span></p>
         <p class="status">Under construction</p>
       </header>
 
       <section class="intro" aria-labelledby="workshop-title">
-        <h1 id="workshop-title">Matrix Manifold Methods<br class="desktop-break"> in Engineering</h1>
-        <p class="subtitle">Robotics and Brain-Computer Interfaces</p>
-        <p class="description">This proposed workshop brings together matrix geometry, optimization, robotics, and neural signal decoding to examine when geometric methods improve task outcomes.</p>
-        <p class="notice">The program and further details will be added if the workshop is accepted.</p>
+        <div class="intro-type">
+          <h1 id="workshop-title"><span>Matrix Manifold</span> <span>Methods</span> <em>in Engineering</em></h1>
+          <p class="subtitle">Robotics and<br>Brain-Computer Interfaces</p>
+        </div>
+        <figure class="geometry">
+          <img src="assets/matrix-surface.svg" width="500" height="480" alt="A line drawing of the unit-determinant surface in SPD(2), with an affine-invariant geodesic highlighted.">
+          <figcaption><span>SPD(2)</span><span>det <i>P</i> = 1</span></figcaption>
+        </figure>
       </section>
 
-      <section class="organizers" aria-labelledby="organizers-title">
+      <section class="about section-layout" aria-labelledby="about-title">
+        <h2 id="about-title">About the workshop</h2>
+        <div class="about-copy">
+          <p class="description">This proposed workshop brings together matrix geometry, optimization, robotics, and neural signal decoding to examine when geometric methods improve task outcomes.</p>
+          <p class="notice">The program and further details will be added if the workshop is accepted.</p>
+        </div>
+      </section>
+
+      <section class="organizers section-layout" aria-labelledby="organizers-title">
         <h2 id="organizers-title">Organizers</h2>
         <ul class="people">
           <li>
@@ -57,7 +72,7 @@
       </section>
 
       <footer class="footer">
-        <p>Contact <a href="mailto:ceju@cuhk.edu.cn">ceju@cuhk.edu.cn</a></p>
+        <p><span class="contact-label">Contact</span><a href="mailto:ceju@cuhk.edu.cn">ceju@cuhk.edu.cn</a></p>
         <p>Proposed workshop · Subject to acceptance</p>
       </footer>
     </main>
