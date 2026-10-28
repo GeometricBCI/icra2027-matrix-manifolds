@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 48" fill="none">
+  <title>Small illustrated envelope</title>
+  <g stroke="#658071" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m8 13 43-3 2 29-43 3Z" fill="#edf0e2"/>
+    <path d="m9 14 22 16 20-18M11 40l14-15m13-1 14 14"/>
+  </g>
+  <circle cx="31" cy="29" r="3.7" fill="#bd8166" stroke="#995c43" stroke-width="1.1"/>
+</svg>

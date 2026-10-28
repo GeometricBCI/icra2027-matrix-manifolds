@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 110" fill="none">
+  <title>Small illustrated geometry notebook</title>
+  <path d="M21 83c21-7 74-6 105 1-26 8-82 9-105-1Z" fill="#e4e8da"/>
+  <g stroke="#586359" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m24 27 42-7c6-1 12 3 14 7l-3 57c-4-5-9-7-15-6l-40 6Z" fill="#fcf7e9"/>
+    <path d="m80 27 39-7 8 56-40 8c-4 1-7 0-10 0Z" fill="#f9f2df"/>
+    <path d="m80 28-3 56M24 88l38-7c5-1 11 1 15 5 4 1 7 1 11 0l40-7"/>
+    <path d="m39 39-6 1-1 22 6-1m25-26 5-1-1 22-6 1" stroke="#658476" stroke-width="1.7"/>
+    <path d="m88 48 5 13 8-23 9 14" stroke="#a36449" stroke-width="1.8"/>
+    <path d="m90 67 22-4" stroke="#b7bdac" stroke-width="1.4"/>
+    <path d="m26 70 36-6" stroke="#c7c4b1" stroke-width="1.4"/>
+    <path d="m102 18 9-2 3 20-5-3-4 5Z" fill="#d6dfc9" stroke="#82917b" stroke-width="1.4"/>
+    <path d="m18 27 9-14 6 4-9 14-8 6Z" fill="#e6c7ae" stroke-width="1.5"/>
+    <path d="m24 31-6-4m-2 10 4-1" stroke-width="1.5"/>
+  </g>
+  <g fill="#658476"><circle cx="46" cy="43" r="2.4"/><circle cx="57" cy="41" r="2.4"/><circle cx="45" cy="54" r="2.4"/><circle cx="56" cy="52" r="2.4"/></g>
+</svg>
