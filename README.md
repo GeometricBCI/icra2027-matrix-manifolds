@@ -10,12 +10,15 @@ This static page contains the proposed workshop title, a short description, the 
 
 - `docs/index.html`: website content
 - `docs/styles.css`: responsive styling
-- `docs/assets/`: geometric illustration, favicon, and self-hosted fonts with licenses
+- `docs/assets/`: robot artwork, geometric illustration, favicon, and self-hosted fonts with licenses
 - `tools/generate-matrix-surface.py`: reproducible source for the geometric illustration
+- `artwork/`: original robot illustration and its generation prompt/provenance
 
 No build step, JavaScript, third-party requests, or runtime dependencies are required. Open `docs/index.html` locally or serve the `docs` directory with a static web server. Keep the full `docs` directory together.
 
-The design uses Source Serif 4 and IBM Plex Sans. Font files are served by the website, with their original SIL Open Font License files in `docs/assets/fonts`. The illustration is an orthographic projection of the determinant-one surface in SPD(2); the highlighted curve is an affine-invariant geodesic.
+The design uses Source Serif 4 and IBM Plex Sans, warm ivory, graphite, and a restrained rust accent. Font files are served by the website, with their original SIL Open Font License files in `docs/assets/fonts`. The hero combines a conceptual robot-arm rendering with an orthographic projection of the determinant-one surface in SPD(2); the highlighted curve is an affine-invariant geodesic. The artwork is illustrative and does not represent a particular team's equipment or a specific kinematic mapping. The original robot asset and exact generation prompt are retained in `artwork/`.
+
+Navigation uses native page anchors. A skip link, visible keyboard focus, reduced-motion support, and responsive layouts are included. The site makes no third-party font or script requests.
 
 Font sources:
 

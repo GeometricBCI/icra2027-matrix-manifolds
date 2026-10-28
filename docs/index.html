@@ -5,67 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f5f2eb">
     <meta name="description" content="Matrix Manifold Methods in Engineering: Robotics and Brain-Computer Interfaces. A proposed ICRA 2027 workshop. Website under construction.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Matrix Manifold Methods in Engineering">
+    <meta property="og:description" content="Robotics and Brain-Computer Interfaces. A proposed ICRA 2027 workshop on when geometry improves task outcomes.">
+    <meta property="og:url" content="https://geometricbci.github.io/icra2027-matrix-manifolds/">
     <title>Matrix Manifold Methods in Engineering | Proposed ICRA 2027 Workshop</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/fonts/SourceSerif4-Roman.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preload" href="assets/robot-arm.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="styles.css?v=3">
   </head>
   <body>
+    <a class="skip-link" href="#about">Skip to workshop overview</a>
     <main class="page">
       <header class="masthead">
-        <p class="masthead-title"><span>ICRA 2027</span><span class="masthead-note">Workshop proposal</span></p>
-        <p class="status">Under construction</p>
+        <div class="identity">
+          <img class="identity-mark" src="assets/favicon.svg" width="38" height="38" alt="">
+          <p class="masthead-title"><span>ICRA 2027</span><span class="masthead-note">Workshop proposal</span></p>
+        </div>
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="#about">Overview</a>
+          <a href="#organizers">Organizers</a>
+        </nav>
+        <p class="status"><span aria-hidden="true"></span>Under construction</p>
       </header>
 
       <section class="intro" aria-labelledby="workshop-title">
         <div class="intro-type">
+          <p class="eyebrow">Geometry in engineering</p>
           <h1 id="workshop-title"><span>Matrix Manifold</span> <span>Methods</span> <em>in Engineering</em></h1>
           <p class="subtitle">Robotics and<br>Brain-Computer Interfaces</p>
+          <a class="intro-link" href="#about">Explore the workshop <span aria-hidden="true">↘</span></a>
         </div>
-        <figure class="geometry">
-          <img src="assets/matrix-surface.svg" width="500" height="480" alt="A line drawing of the unit-determinant surface in SPD(2), with an affine-invariant geodesic highlighted.">
-          <figcaption><span>SPD(2)</span><span>det <i>P</i> = 1</span></figcaption>
+        <figure class="research-visual">
+          <div class="artwork">
+            <div class="construction-lines" aria-hidden="true"><span></span><span></span></div>
+            <img class="surface-art" src="assets/matrix-surface.svg" width="500" height="480" alt="The determinant-one surface in SPD(2), with an affine-invariant geodesic highlighted.">
+            <img class="robot-art" src="assets/robot-arm.webp" width="1254" height="1254" fetchpriority="high" decoding="async" alt="Conceptual studio rendering of an articulated research robot arm with ivory links, graphite joints, and a two-finger gripper.">
+            <span class="geometry-label" aria-hidden="true">SPD(2)<span>det <i>P</i> = 1</span></span>
+          </div>
+          <figcaption><span class="figure-number">Fig. 01</span><span>Geometry &amp; robotics</span><span class="figure-note">Conceptual illustration</span></figcaption>
         </figure>
       </section>
 
-      <section class="about section-layout" aria-labelledby="about-title">
-        <h2 id="about-title">About the workshop</h2>
+      <section id="about" class="about section-layout" aria-labelledby="about-title">
+        <div class="section-heading"><span class="section-number" aria-hidden="true">01 /</span><h2 id="about-title">The workshop</h2></div>
         <div class="about-copy">
-          <p class="description">This proposed workshop brings together matrix geometry, optimization, robotics, and neural signal decoding to examine when geometric methods improve task outcomes.</p>
+          <p class="central-question">When does geometry<br>improve task outcomes?</p>
+          <p class="description">We bring together matrix geometry, optimization, robotics, and neural signal decoding to examine the connection between geometric methods and task performance.</p>
           <p class="notice">The program and further details will be added if the workshop is accepted.</p>
         </div>
       </section>
 
-      <section class="organizers section-layout" aria-labelledby="organizers-title">
-        <h2 id="organizers-title">Organizers</h2>
+      <section id="organizers" class="organizers section-layout" aria-labelledby="organizers-title">
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02 /</span><h2 id="organizers-title">Organizing team</h2><p class="team-note">Perspectives from geometry, <br>robotics, and neural decoding.</p></div>
         <ul class="people">
           <li>
-            <h3>Ce Ju</h3>
+            <div><h3>Ce Ju</h3><span class="research-area">Neural signal decoding</span></div>
             <p>The Chinese University of Hong Kong, Shenzhen, China</p>
           </li>
           <li>
-            <h3>Cyrus Mostajeran</h3>
+            <div><h3>Cyrus Mostajeran</h3><span class="research-area">Matrix geometry</span></div>
             <p>Nanyang Technological University, Singapore</p>
           </li>
           <li>
-            <h3>Frank Nielsen</h3>
+            <div><h3>Frank Nielsen</h3><span class="research-area">Information geometry</span></div>
             <p>Sony Computer Science Laboratories, Japan</p>
           </li>
           <li>
-            <h3>Clément Bonet</h3>
+            <div><h3>Clément Bonet</h3><span class="research-area">Optimal transport</span></div>
             <p>École Polytechnique, France</p>
           </li>
           <li>
-            <h3>Bamdev Mishra</h3>
+            <div><h3>Bamdev Mishra</h3><span class="research-area">Riemannian optimization</span></div>
             <p>Microsoft, India</p>
           </li>
           <li>
-            <h3>Silvère Bonnabel</h3>
+            <div><h3>Silvère Bonnabel</h3><span class="research-area">State estimation &amp; control</span></div>
             <p>Mines Paris – PSL, France</p>
           </li>
           <li>
-            <h3>Noémie Jaquier</h3>
+            <div><h3>Noémie Jaquier</h3><span class="research-area">Geometric robot learning</span></div>
             <p>KTH Royal Institute of Technology, Sweden</p>
           </li>
         </ul>
