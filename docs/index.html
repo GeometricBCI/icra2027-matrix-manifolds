@@ -15,7 +15,7 @@
     <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/KleeOne-Semibold-Latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/robot-arm-illustrated.webp" as="image" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=9">
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to the workshop</a>
@@ -48,7 +48,14 @@
       </section>
 
       <section id="about" class="about section-layout" aria-labelledby="about-title">
-        <div class="section-heading"><h2 id="about-title">The idea</h2><img class="section-illustration" src="assets/field-notes.svg" width="150" height="110" alt=""></div>
+        <div class="section-heading bci-heading">
+          <h2 id="about-title">The idea</h2>
+          <figure class="bci-visual">
+            <img class="bci-person" src="assets/bci-cap-illustrated.webp" width="1254" height="1254" decoding="async" alt="A hand-drawn person wearing an external EEG recording cap, paired with an illustration of a matrix manifold.">
+            <svg class="bci-link" viewBox="0 0 190 210" fill="none" aria-hidden="true"><path d="M136 57c36 3 49 24 40 53" stroke="#899682" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 5"/></svg>
+            <img class="bci-surface" src="assets/matrix-surface-storybook.svg?v=2" width="500" height="480" alt="">
+          </figure>
+        </div>
         <div class="about-copy">
           <p class="central-question">What can geometry<br>do for robotics?</p>
           <p class="description">Let's explore matrix geometry for robot motion, state estimation, and neural decoding. We'll share what works, what doesn't, and why.</p>
