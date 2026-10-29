@@ -89,7 +89,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
 h1 { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 62px; font-weight: 350; font-optical-sizing: auto; line-height: 1.015; letter-spacing: -.052em; }
 h1 span, h1 em { display: block; }
 h1 em { color: var(--accent); font-weight: 350; }
-.subtitle { margin: 27px 0 0 3px; color: var(--body); font-family: var(--hand); font-size: 18px; line-height: 1.6; }
+.subtitle { margin: 27px 0 0 3px; color: var(--body); font-family: var(--hand); font-size: 18px; font-weight: 600; line-height: 1.6; }
 .intro-link { display: inline-flex; align-items: center; gap: 19px; margin: 28px 0 0 3px; padding-block: 8px; color: var(--ink); font-family: var(--hand); font-size: 16px; text-decoration: none; }
 .intro-link svg { color: var(--warm); }
 .intro-link:hover { text-decoration: underline; }
