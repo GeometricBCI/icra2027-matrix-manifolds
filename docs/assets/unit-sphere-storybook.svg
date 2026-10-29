@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 150" fill="none">
+  <title>The unit sphere of directions</title>
+  <desc>A hand-textured sphere represents S squared. Elliptical great-circle guides show its curvature; dashed arcs indicate the back of the sphere.</desc>
+  <defs>
+    <radialGradient id="sphere-wash" cx=".3" cy=".25" r=".85">
+      <stop stop-color="#edf0db"/>
+      <stop offset=".62" stop-color="#dce8da"/>
+      <stop offset="1" stop-color="#bed4c6"/>
+    </radialGradient>
+    <filter id="sphere-paper" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17" stitchTiles="stitch" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round" filter="url(#sphere-paper)">
+    <circle cx="80" cy="75" r="49" fill="url(#sphere-wash)" stroke="#607965" stroke-width="1.8"/>
+    <g transform="rotate(-17 80 75)">
+      <path d="M31 75A49 17 0 0 1 129 75" stroke="#8ca58a" stroke-width="1.25" stroke-dasharray="3 4"/>
+      <path d="M31 75A49 17 0 0 0 129 75" stroke="#728e73" stroke-width="1.5"/>
+      <path d="M80 26A20 49 0 0 0 80 124" stroke="#8ca58a" stroke-width="1.25" stroke-dasharray="3 4"/>
+      <path d="M80 26A20 49 0 0 1 80 124" stroke="#728e73" stroke-width="1.5"/>
+    </g>
+    <path d="M45.3 40.4C32.2 52.8 26.5 71.4 33.3 90.3M69.2 122.5C91.7 129 115.1 114.5 123.2 98.6" stroke="#697f65" stroke-width=".8" opacity=".5"/>
+    <path d="M48 48.4C54.6 41.4 62.9 37.6 70.3 36.8" stroke="#fbfaed" stroke-width="3.5" opacity=".6"/>
+    <circle cx="101" cy="85.2" r="3.5" fill="#b97654" stroke="#f5e9d8" stroke-width="1.2"/>
+    <path d="M135.8 44.5L140 42.4M132.3 37.5L134.6 33.9" stroke="#aab598" stroke-width="1.2"/>
+    <path d="M24.7 110.2L25.8 113.6L29.3 114.7L25.9 115.9L24.8 119.3L23.6 115.9L20.2 114.8L23.6 113.6Z" fill="#dfce91" stroke="#aea273" stroke-width=".8"/>
+  </g>
+</svg>

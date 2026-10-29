@@ -15,7 +15,7 @@
     <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/KleeOne-Semibold-Latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/shared-workbench-car-illustrated.webp" as="image" type="image/webp">
-    <link rel="stylesheet" href="styles.css?v=17">
+    <link rel="stylesheet" href="styles.css?v=18">
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to the workshop</a>
@@ -41,9 +41,21 @@
         </div>
         <figure class="research-visual">
           <div class="artwork">
-            <img class="surface-art" src="assets/matrix-surface-storybook.svg?v=4" width="500" height="480" alt="A hand-textured determinant-one surface in SPD(2), with an affine-invariant geodesic highlighted, above Shin-chan and the robot.">
+            <div class="manifold-gallery" role="group" aria-label="Three manifold sketches">
+              <div class="manifold-tile manifold-spd">
+                <img src="assets/matrix-surface-storybook.svg?v=4" width="500" height="480" alt="SPD(2), illustrated by a determinant-one surface with an affine-invariant geodesic highlighted.">
+                <span class="geometry-label" aria-hidden="true">SPD(2)</span>
+              </div>
+              <div class="manifold-tile manifold-rotation">
+                <img src="assets/rotation-circle-storybook.svg" width="160" height="150" alt="SO(2), the manifold of planar rotations, represented by a circle with a rotation arrow.">
+                <span class="geometry-label" aria-hidden="true">SO(2)</span>
+              </div>
+              <div class="manifold-tile manifold-sphere">
+                <img src="assets/unit-sphere-storybook.svg" width="160" height="150" alt="S squared, the unit sphere of directions in three-dimensional space, with great-circle guides.">
+                <span class="geometry-label" aria-hidden="true">S<sup>2</sup></span>
+              </div>
+            </div>
             <img class="story-art" src="assets/shared-workbench-car-illustrated.webp" width="1254" height="1254" fetchpriority="high" decoding="async" alt="Shin-chan, wearing an external EEG cap, watches a cream-and-sage robot grasp a small toy car resting on their shared workbench. A thin cap lead curls toward a small recording box on the table.">
-            <span class="geometry-label" aria-hidden="true"><span class="geometry-name">SPD(2)</span></span>
           </div>
         </figure>
       </section>

@@ -96,9 +96,13 @@ h1 em { color: var(--accent); font-weight: 350; }
 .research-visual { position: relative; width: 100%; margin: 0 0 0 auto; }
 .artwork { position: relative; width: 100%; aspect-ratio: 1; isolation: isolate; }
 .story-art { position: absolute; z-index: 2; top: 12%; left: 0; display: block; width: 100%; height: auto; }
-.surface-art { position: absolute; z-index: 1; left: 28%; top: -5%; display: block; width: 44%; height: auto; }
-.geometry-label { position: absolute; z-index: 3; left: 50%; top: 31%; display: inline-flex; align-items: baseline; padding: 4px 10px 5px; border: 1px solid #bcb79c; border-radius: 5px 10px 6px 9px; background: #f4efdb; color: var(--accent); font-family: var(--hand); font-weight: 600; line-height: 1.35; white-space: nowrap; transform: translateX(-50%) rotate(-3deg); }
-.geometry-name { display: inline-block; font-size: 14px; transform: rotate(-2deg); }
+.manifold-gallery { position: absolute; z-index: 3; top: 1.5%; left: 2%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 6px; width: 96%; }
+.manifold-tile { display: flex; flex-direction: column; align-items: center; min-width: 0; }
+.manifold-tile img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 15; object-fit: contain; }
+.geometry-label { display: inline-flex; align-items: baseline; justify-content: center; min-width: 49px; margin-top: -5px; padding: 3px 9px 4px; border: 1px solid #bcb79c; border-radius: 5px 10px 6px 9px; background: #f4efdb; color: var(--accent); font-family: var(--hand); font-size: 13px; font-weight: 600; line-height: 1.35; white-space: nowrap; transform: rotate(-3deg); }
+.manifold-rotation .geometry-label { border-color: #c9b19d; background: #f5e7dc; color: #805e45; transform: rotate(3deg); }
+.manifold-sphere .geometry-label { border-color: #aabdb8; background: #e6eddf; transform: rotate(-2deg); }
+.geometry-label sup { position: relative; top: -.35em; font-size: .75em; line-height: 0; }
 .section-layout { display: grid; grid-template-columns: 190px minmax(0, 1fr); column-gap: 36px; border-top: 1px solid var(--rule); }
 .section-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .section-illustration { display: block; width: 104px; height: auto; margin: 2px 0 0 -9px; }
@@ -202,8 +206,8 @@ h2 { margin: 0; color: var(--ink); font-family: var(--hand); font-size: 24px; fo
   .subtitle { margin: 23px 0 0 1px; font-size: 17px; }
   .intro-link { margin: 17px 0 0 1px; font-size: 15px; gap: 20px; }
   .research-visual { width: 100%; margin: 8px 0 0 auto; }
-  .geometry-label { padding: 3px 8px 4px; }
-  .geometry-name { font-size: 12px; }
+  .manifold-gallery { gap: 3px; }
+  .geometry-label { min-width: 43px; padding: 2px 7px 3px; font-size: 12px; }
   .section-layout { grid-template-columns: 1fr; gap: 24px; }
   .section-heading { flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; }
   .section-illustration { width: 64px; margin: -10px 0 -7px; }
