@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 150" fill="none">
+  <title>Three-dimensional rotations</title>
+  <desc>A hand-drawn cube, three coordinate axes, and curved rotation arrows illustrate spatial orientation, an element of SO(3). This is an illustration of rotations, not an embedding of the manifold.</desc>
+  <defs>
+    <filter id="spatial-paper" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".16"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round" filter="url(#spatial-paper)">
+    <!-- A loose rotation arc passes behind the body. -->
+    <path d="M27.7 89.8C24.7 75.4 47.4 61.3 77.3 58.9C107.4 56.5 133.3 66.4 135.1 81" stroke="#c9af8a" stroke-width="1.25" stroke-dasharray="3 4"/>
+    <path d="M70.9 124.3C55 113.9 48.5 88.7 54.9 61.4C61 35.4 77.9 21.3 90.8 27.7" stroke="#c5c9ac" stroke-width="1.25" stroke-dasharray="3 4"/>
+
+    <!-- Three projected axes meet at the center of the body. -->
+    <path d="M80 78L127.5 101.7" stroke="#ae7157" stroke-width="1.7"/>
+    <path d="M80 78L32.5 101.7" stroke="#718b73" stroke-width="1.7"/>
+    <path d="M80 78L80 24.9" stroke="#8d8a67" stroke-width="1.7"/>
+    <path d="M122.3 95.5L128.5 102.2L119.4 102.9" stroke="#ae7157" stroke-width="1.7"/>
+    <path d="M40.7 102.8L31.5 102.2L37.7 95.6" stroke="#718b73" stroke-width="1.7"/>
+    <path d="M75.8 31.1L80 23.8L84.2 31.1" stroke="#8d8a67" stroke-width="1.7"/>
+
+    <!-- The three visible faces share one projected orientation. -->
+    <path d="M80 48L108 62L80 76L52 62Z" fill="#f1e4bc" stroke="#84765a" stroke-width="1.65"/>
+    <path d="M52 62L80 76L80 108L52 94Z" fill="#e7c5a4" stroke="#84765a" stroke-width="1.65"/>
+    <path d="M80 76L108 62L108 94L80 108Z" fill="#d9dcb9" stroke="#84765a" stroke-width="1.65"/>
+    <path d="M56.2 63L79.8 51.2L103.6 62.8M55.1 68.1L55.5 90.9L74.7 100.8" stroke="#fff6d9" stroke-width="1.45" opacity=".57"/>
+    <path d="M82.2 79.6L82.4 104.8L105.2 93" stroke="#9ca17f" stroke-width=".7" opacity=".55"/>
+    <circle cx="80" cy="76" r="2.3" fill="#b57653" stroke="#f7edcf" stroke-width=".9"/>
+
+    <!-- Open arcs suggest rotation, without depicting SO(3) as a sphere. -->
+    <path d="M27.7 89.8C30.5 104.7 57.4 112.4 86.4 109.8C110.6 107.5 131.4 96.4 135.1 81" stroke="#e0c29d" stroke-width="5" opacity=".5"/>
+    <path d="M27.7 89.8C30.5 104.7 57.4 112.4 86.4 109.8C110.6 107.5 131.4 96.4 135.1 81" stroke="#ae7c53" stroke-width="1.65"/>
+    <path d="M129.3 86.2L135.6 79.9L138.1 88.8" stroke="#ae7c53" stroke-width="1.65"/>
+    <path d="M90.8 27.7C104.5 34.3 111.7 57.8 108.4 82.7C105.8 102.4 96.3 118.8 85.5 125" stroke="#b6c6a1" stroke-width="4.5" opacity=".5"/>
+    <path d="M90.8 27.7C104.5 34.3 111.7 57.8 108.4 82.7C105.8 102.4 96.3 118.8 85.5 125" stroke="#7c9470" stroke-width="1.65"/>
+    <path d="M89.8 117.4L84.2 125.7L93.6 124.5" stroke="#7c9470" stroke-width="1.65"/>
+    <path d="M27.5 43.4L28.6 46.6L31.8 47.7L28.6 48.8L27.5 52L26.4 48.8L23.2 47.7L26.4 46.6Z" fill="#e2c784" stroke="#b4a06d" stroke-width=".8"/>
+    <path d="M124.3 34.4L126.7 31.1M130.9 40.4L134.6 39.3" stroke="#b7ae91" stroke-width="1.2"/>
+  </g>
+</svg>
