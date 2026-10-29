@@ -94,10 +94,10 @@ h1 em { color: var(--accent); font-weight: 350; }
 .intro-link svg { color: var(--warm); }
 .intro-link:hover { text-decoration: underline; }
 .research-visual { position: relative; width: 100%; margin: 0 0 0 auto; }
-.artwork { position: relative; width: 100%; aspect-ratio: 1.08; isolation: isolate; }
-.story-art { position: absolute; z-index: 2; top: -10%; left: 0; display: block; width: 100%; height: auto; }
-.surface-art { position: absolute; z-index: 1; left: 48.5%; top: 32.6%; display: block; width: 39%; height: auto; transform: scaleX(-1); }
-.geometry-label { position: absolute; z-index: 3; left: 48%; top: 74%; display: inline-flex; align-items: baseline; gap: 12px; padding: 4px 10px 5px; border: 1px solid #bcb79c; border-radius: 5px 10px 6px 9px; background: #f4efdb; color: var(--accent); font-family: var(--hand); font-weight: 600; line-height: 1.35; white-space: nowrap; transform: rotate(-3deg); }
+.artwork { position: relative; width: 100%; aspect-ratio: 1; isolation: isolate; }
+.story-art { position: absolute; z-index: 2; top: 12%; left: 0; display: block; width: 100%; height: auto; }
+.surface-art { position: absolute; z-index: 1; left: 28%; top: -5%; display: block; width: 44%; height: auto; }
+.geometry-label { position: absolute; z-index: 3; left: 50%; top: 31%; display: inline-flex; align-items: baseline; gap: 12px; padding: 4px 10px 5px; border: 1px solid #bcb79c; border-radius: 5px 10px 6px 9px; background: #f4efdb; color: var(--accent); font-family: var(--hand); font-weight: 600; line-height: 1.35; white-space: nowrap; transform: translateX(-50%) rotate(-3deg); }
 .geometry-name { display: inline-block; font-size: 14px; transform: rotate(-2deg); }
 .geometry-condition { font-size: 12px; letter-spacing: 0; }
 .section-layout { display: grid; grid-template-columns: 190px minmax(0, 1fr); column-gap: 36px; border-top: 1px solid var(--rule); }

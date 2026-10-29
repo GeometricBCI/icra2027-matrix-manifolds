@@ -1,5 +1,7 @@
 # A shared workbench scene
 
+Earlier workbench composition, retained as the edit input for the active toy-car scene documented in `ART_DIRECTION_TOY_CAR_SCENE.md`.
+
 Created with the built-in imagegen tool on October 29, 2026. The existing robot and Shin-chan EEG-cap PNGs are edit inputs. They are redrawn as a single scene so gaze, posture, a common workbench, and consistent brushwork connect the subjects.
 
 Source PNG: `artwork/shared-workbench-illustrated.png`.
