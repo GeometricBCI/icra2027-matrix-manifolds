@@ -1,5 +1,7 @@
 # Shin-chan EEG-cap illustration
 
+Earlier standalone character, retained as an edit input for the active shared-workbench scene documented in `ART_DIRECTION_SHARED_SCENE.md`.
+
 Created with the built-in imagegen tool on October 29, 2026, using `artwork/bci-cap-illustrated.png` as the edit target. The requested character is Shinnosuke Nohara (Shin-chan). This is conceptual artwork; the cap is not an electrode montage specification.
 
 Source PNG: `artwork/shinchan-eeg-illustrated.png`.

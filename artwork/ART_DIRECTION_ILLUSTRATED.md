@@ -1,5 +1,7 @@
 # Illustrated robot artwork
 
+Earlier standalone robot, retained as an edit input for the active shared-workbench scene documented in `ART_DIRECTION_SHARED_SCENE.md`.
+
 The active website uses a cartoon illustration with rounded cream links, muted sage joints, a small terracotta detail, and hand-drawn ink and gouache textures. The large serif typography and restrained page layout retain a formal research-event identity.
 
 Created with the built-in imagegen tool in two edit passes on October 29, 2026. The first pass used `artwork/robot-arm.png` as its edit target; the second simplified the first pass. This is conceptual artwork, not a photograph or an equipment specification.

@@ -52,6 +52,9 @@ parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" fill="no
          '<desc>A projected hyperboloid representing positive-definite two-by-two matrices of determinant one. A geodesic for the affine-invariant metric is drawn in red. The pastel coloring is decorative.</desc>']
 
 if storybook:
+    # A subtle pigment texture changes only the rendering, not the geometry.
+    parts.append('<defs><filter id="paper-grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="11" stitchTiles="stitch" result="grain"/><feComponentTransfer in="grain" result="paper"><feFuncR type="linear" slope=".16" intercept=".84"/><feFuncG type="linear" slope=".16" intercept=".84"/><feFuncB type="linear" slope=".16" intercept=".84"/><feFuncA type="table" tableValues="1 1"/></feComponentTransfer><feBlend in="SourceGraphic" in2="paper" mode="multiply" result="ink"/><feComposite in="ink" in2="SourceGraphic" operator="in"/></filter></defs>')
+    parts.append('<g filter="url(#paper-grain)">')
     # Color the projected silhouette without perturbing the analytic grid.
     # Monotone-chain hull of the sampled projected surface.
     points = sorted(set(mesh))
@@ -95,6 +98,8 @@ parts.append(f'<path d="{path(curve)}" stroke="#a54e36" stroke-width="{5.5 if st
 for point in [curve[0], curve[-1]]:
     x,y = mapped(point)
     parts.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="{4.5 if storybook else 3}" fill="#a54e36"/>')
+if storybook:
+    parts.append('</g>')
 parts.append('</svg>')
 
 filename = 'matrix-surface-storybook.svg' if storybook else 'matrix-surface-illustrated.svg' if illustrated else 'matrix-surface.svg'
