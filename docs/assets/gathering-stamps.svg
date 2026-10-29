@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="notebook" viewBox="0 0 64 64">
+    <g fill="none" stroke="#63745b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 17 29 14l4 4 21-3-2 36-20 3-22-3Z" fill="#f6efda"/>
+      <path d="m33 18-1 36M15 22l9-2m-9 8 10-2m-10 9 9-1"/>
+      <path d="m38 39 4-12 6 9" stroke="#ae7658"/>
+      <path d="m42 15 7-1-1 12-4-3-3 3Z" fill="#c8d8b6"/>
+      <path d="m7 56 49-2" stroke="#bfc6af"/>
+    </g>
+  </symbol>
+  <symbol id="orbit" viewBox="0 0 64 64">
+    <g fill="none" stroke="#8e775d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="32" cy="32" rx="26" ry="12" transform="rotate(-32 32 32)" fill="#f1e2c6"/>
+      <ellipse cx="32" cy="32" rx="12" ry="25" transform="rotate(-32 32 32)"/>
+      <path d="M11 45c14-4 26-16 39-24" stroke="#c08d6f"/>
+      <circle cx="32" cy="32" r="5" fill="#b8c9a8" stroke="#73896a"/>
+      <circle cx="49" cy="17" r="3.5" fill="#d7a583"/>
+      <path d="m53 44 1 5m-3-2 5-1" stroke="#a99d7e"/>
+    </g>
+  </symbol>
+  <symbol id="robot" viewBox="0 0 64 64">
+    <g stroke="#66775e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M15 19c9-2 26-1 34 1l1 25c-7 6-27 6-35 1Z" fill="#dae3cd"/>
+      <path d="m18 50-3 7m31-7 3 7m-35-1h8m21 0h8M31 18l1-8"/>
+      <circle cx="32" cy="8" r="3" fill="#daa889" stroke="#a17b5a"/>
+      <path d="m14 28-6 1 1 12 5 1m36-14 5 2-1 11-4 1" fill="#f6ecd4"/>
+      <path d="M25 40c5 4 9 4 14-1" stroke="#7b8970"/>
+      <ellipse cx="25" cy="30" rx="2" ry="2.6" fill="#58664e"/>
+      <ellipse cx="40" cy="30" rx="2" ry="2.6" fill="#58664e"/>
+    </g>
+  </symbol>
+  <symbol id="compass" viewBox="0 0 64 64">
+    <g stroke="#7f8663" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M12 50c10 9 29 10 42-1" stroke="#afbaa1" stroke-dasharray="2 4"/>
+      <path d="m31 13-16 36 5 2 15-36Z" fill="#c9d8b8"/>
+      <path d="m35 13 15 37-5 2-14-37Z" fill="#eed9b8"/>
+      <circle cx="33" cy="14" r="5" fill="#e5c4a8" stroke="#9d8163"/>
+      <path d="m33 8 1-5m-18 46-3 7m36-6 3 6M24 34l18-1"/>
+      <path d="m11 17 1 5m-4-2 6-1" stroke="#b9a06f"/>
+    </g>
+  </symbol>
+  <symbol id="mountains" viewBox="0 0 64 64">
+    <g stroke="#768569" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="m6 51 19-35 20 34Z" fill="#d9e2cb"/>
+      <path d="m25 51 18-27 16 28Z" fill="#bacaad"/>
+      <path d="m17 31 8-15 9 15-6-3-4 4-3-5Z" fill="#fcf6e6"/>
+      <path d="m37 33 6-9 6 10-6-2-3 3Z" fill="#f6f0db"/>
+      <circle cx="46" cy="12" r="5" fill="#e4c49c" stroke="#bda16e"/>
+      <path d="m4 55 55 1" stroke="#afb9a0"/>
+    </g>
+  </symbol>
+  <symbol id="matrix" viewBox="0 0 64 64">
+    <g stroke="#748269" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="m9 14 45-3 3 43-45 3Z" fill="#edf0dd" stroke="#a1ad90"/>
+      <path d="m23 21-5 1 1 25 6-1m17-26 5-1 1 25-6 1"/>
+      <path d="m28 28 9-1m-10 11 11-1" stroke="#b98565" stroke-width="2.5"/>
+      <path d="m28 23 1 9m7 2 1 9" stroke="#8fa582"/>
+      <path d="m7 7 1 5m-3-2 5-1" stroke="#bca77c"/>
+    </g>
+  </symbol>
+  <symbol id="blocks" viewBox="0 0 64 64">
+    <g stroke="#798368" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="m9 29 17-9 16 10-17 10Z" fill="#e1d2b3"/>
+      <path d="m9 29 16 11 1 18-17-10Z" fill="#eadfc9"/>
+      <path d="m25 40 17-10 1 18-17 10Z" fill="#cbd9bd"/>
+      <circle cx="47" cy="19" r="10" fill="#e2bfa5" stroke="#a38b6c"/>
+      <path d="m42 12 5 2 4 10" stroke="#f9ebd5"/>
+      <path d="m43 55 4-7 8 7Z" fill="#d4dfc3"/>
+    </g>
+  </symbol>
+  <symbol id="path" viewBox="0 0 64 64">
+    <g stroke="#7c876c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="m10 16 15-4 13 5 15-5 2 39-16 5-14-6-14 5Z" fill="#f5edda"/>
+      <path d="m25 12 0 38m13-33 1 39" stroke="#b5bea6"/>
+      <path d="M16 42c6-17 18 4 24-10 3-8-3-8 5-14" stroke="#a27458" stroke-width="2.2" stroke-dasharray="2 4"/>
+      <circle cx="16" cy="42" r="3" fill="#c0d2ac"/>
+      <path d="m43 21 4-6 3 8" stroke="#a27458"/>
+    </g>
+  </symbol>
+</svg>
