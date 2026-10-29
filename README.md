@@ -11,12 +11,12 @@ This static page contains the proposed workshop title, a short description, the 
 - `docs/index.html`: website content
 - `docs/styles.css`: responsive styling
 - `docs/assets/robot-arm-illustrated.webp`: active cartoon robot illustration
-- `docs/assets/bci-cap-illustrated.webp`: hand-drawn EEG-cap illustration, paired with the matrix surface in the introduction
+- `docs/assets/shinchan-eeg-illustrated.webp`: Shin-chan wearing an EEG cap, grouped with the robot and matrix surface in the hero
 - `docs/assets/matrix-surface-storybook.svg`: pastel cartoon treatment of the analytic SPD(2) surface
-- `docs/assets/team-birds.svg` and `letter.svg`: small original vector illustrations used across the page
+- `docs/assets/field-notes.svg`, `team-birds.svg`, and `letter.svg`: small original vector illustrations used across the page
 - `docs/assets/`: illustration assets, favicon, and self-hosted fonts with licenses
 - `tools/generate-matrix-surface.py`: reproducible source for the geometric illustration
-- `artwork/`: original robot illustration and its generation prompt/provenance
+- `artwork/`: source illustrations and their generation prompts/provenance
 
 No build step, JavaScript, third-party requests, or runtime dependencies are required. Open `docs/index.html` locally or serve the `docs` directory with a static web server. Keep the full `docs` directory together.
 
@@ -26,7 +26,7 @@ Regenerate the active matrix surface with `python3 tools/generate-matrix-surface
 
 Navigation uses native page anchors. A skip link, visible keyboard focus, reduced-motion support, and responsive layouts are included. The site makes no third-party font or script requests.
 
-The page has a centered maximum content width of 890px, approximately 70% of its earlier 1272px layout. Heading sizes, column gaps, and the robot composition are adjusted to suit the narrower page; small screens retain comfortable reading margins. A person wearing an external EEG cap is paired with the analytic matrix surface beside the introductory text. This conceptual pairing introduces the BCI theme; it does not depict a demonstrated robot-control system or an electrode montage. The built-in imagegen prompt and original PNG are retained in `artwork/ART_DIRECTION_BCI.md` and `artwork/bci-cap-illustrated.png`. Small bird-trio and envelope illustrations extend the warm storybook direction to the team section and footer. These decorative SVGs are original code-native assets and are hidden from screen readers. No new factual claims or program commitments are introduced by the visual refinements.
+The page has a centered maximum content width of 890px, approximately 70% of its earlier 1272px layout. Heading sizes, column gaps, and the hero composition are adjusted to suit the narrower page; small screens retain comfortable reading margins. Shin-chan wears an external EEG cap in the upper-right hero, beside the robot arm and analytic matrix surface. This conceptual grouping introduces the BCI theme; it does not depict a demonstrated robot-control system or an electrode montage. The built-in imagegen edit prompt and source PNG are retained in `artwork/ART_DIRECTION_SHINCHAN.md` and `artwork/shinchan-eeg-illustrated.png`. The earlier generic EEG-cap portrait is retained for reference. The surface uses a sparse grid, bolder rounded contours, and soft color blocks, without facial features; its SPD(2) and determinant labels use handwritten lettering on a small paper-like tag. Notebook, bird-trio, and envelope illustrations extend the same direction to the section headings and footer. These decorative SVGs are original code-native assets and are hidden from screen readers. No new factual claims or program commitments are introduced by the visual refinements.
 
 Font sources:
 
